@@ -29,5 +29,7 @@ jobs:
       with:
         path: /root/
     - name: read the file
-      run: cat /root/hello.txt
+      run: !
+          chmod +r /root/hello.txt
+          cat /root/hello.txt
 
